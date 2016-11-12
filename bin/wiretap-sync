@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+program
+  .arguments('[request]', 'the request to tap')
+  .option('-e, --env <env>', 'the environment key which specifies the host')
+  .parse(process.argv);
+
